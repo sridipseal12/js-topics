@@ -1,0 +1,10 @@
+<script>
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(
+    pos => console.log(`Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`),
+    err => console.error(err)
+  );
+} else {
+  alert("Geolocation not supported!");
+}
+</script>
